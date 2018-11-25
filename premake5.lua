@@ -1,21 +1,4 @@
 
-workspace "PocoFoundationLite"
-	architecture "x64"
-	location "builds"
-	
-if _ACTION == "vs2017" then
-   location "builds/VisualStudio2017"
-end
-	
-	configurations 
-	{ 
-		"Debug", 
-        "Release",
-    }
-    
-outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
-
-
 project "PocoFoundationLite"
     kind "StaticLib"
     language "C++"
