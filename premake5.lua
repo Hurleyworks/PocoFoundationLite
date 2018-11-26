@@ -15,6 +15,7 @@ project "PocoFoundationLite"
 
 	files
 	{
+		"include/Poco/*.h", 
 		"src/Foundation.cpp",
 		"src/File.cpp",
 		"src/Path.cpp",
