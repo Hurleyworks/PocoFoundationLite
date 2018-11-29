@@ -2,9 +2,10 @@
 project "PocoFoundationLite"
     kind "StaticLib"
     language "C++"
-    
-	targetdir ("builds/bin/" .. outputdir .. "/%{prj.name}")
-    objdir ("builds/bin-int/" .. outputdir .. "/%{prj.name}")
+    flags { "MultiProcessorCompile" }
+	
+	targetdir ("../builds/bin/" .. outputdir .. "/%{prj.name}")
+    objdir ("../builds/bin-int/" .. outputdir .. "/%{prj.name}")
 	
 	defines { "POCO_STATIC", "POCO_NO_AUTOMATIC_LIBS"}
 
